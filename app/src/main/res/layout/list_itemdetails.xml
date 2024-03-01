@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:id="@+id/linearId">
+
+
+            <ImageView
+                android:id="@+id/competitionImage_imageView"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_10sdp" />
+            <ImageView
+                android:id="@+id/flagArea_imageView"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_margin="@dimen/_10sdp"
+                 />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/competitionName1_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/linearId"/>
+
+             />
+
+        <TextView
+            android:id="@+id/areaName1_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/competitionName1_TextView"
+            app:layout_constraintEnd_toEndOf="@+id/competitionName1_TextView"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintTop_toBottomOf="@+id/competitionName1_TextView"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/plan_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/areaName1_TextView"
+            app:layout_constraintEnd_toEndOf="@+id/areaName1_TextView"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintTop_toBottomOf="@+id/areaName1_TextView"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
